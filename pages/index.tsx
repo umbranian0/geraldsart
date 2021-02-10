@@ -9,7 +9,10 @@ import { getConfig } from '@framework/api'
 import getAllProducts from '@framework/api/operations/get-all-products'
 import getSiteInfo from '@framework/api/operations/get-site-info'
 import getAllPages from '@framework/api/operations/get-all-pages'
+<<<<<<< HEAD
 import { motion } from 'framer-motion'
+=======
+>>>>>>> 7a5ca5e2b4506943987ff52490682be3983daf10
 
 export async function getStaticProps({
   preview,
@@ -85,6 +88,7 @@ export default function Home({
   newestProducts,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
+<<<<<<< HEAD
     
     <div>
 
@@ -108,6 +112,9 @@ export default function Home({
       </motion.div>
         
  
+=======
+    <div>
+>>>>>>> 7a5ca5e2b4506943987ff52490682be3983daf10
       <Grid>
         {featured.slice(0, 3).map(({ node }, i) => (
           <ProductCard
@@ -118,7 +125,10 @@ export default function Home({
             imgPriority
             imgLoading="eager"
           />
+<<<<<<< HEAD
           
+=======
+>>>>>>> 7a5ca5e2b4506943987ff52490682be3983daf10
         ))}
       </Grid>
       <Marquee variant="secondary">
