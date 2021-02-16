@@ -15,7 +15,7 @@ interface Props {
   pages?: Page[]
 }
 
-const LEGAL_PAGES = ['terms-of-use', 'shipping-returns', 'privacy-policy']
+const LEGAL_PAGES = ['terms-of-use', 'privacy-policy']
 
 const Footer: FC<Props> = ({ className, pages }) => {
   const { sitePages, legalPages } = usePages(pages)
@@ -31,7 +31,7 @@ const Footer: FC<Props> = ({ className, pages }) => {
                 <span className="rounded-full border border-gray-700 mr-2">
                   <Logo />
                 </span>
-                <span>ACME</span>
+                <span>GLDS</span>
               </a>
             </Link>
           </div>
@@ -41,13 +41,6 @@ const Footer: FC<Props> = ({ className, pages }) => {
                 <Link href="/">
                   <a className="text-primary hover:text-accents-6 transition ease-in-out duration-150">
                     Home
-                  </a>
-                </Link>
-              </li>
-              <li className="py-3 md:py-0 md:pb-4">
-                <Link href="/">
-                  <a className="text-primary hover:text-accents-6 transition ease-in-out duration-150">
-                    Careers
                   </a>
                 </Link>
               </li>
@@ -84,23 +77,24 @@ const Footer: FC<Props> = ({ className, pages }) => {
           </div>
           <div className="col-span-1 lg:col-span-6 flex items-start lg:justify-end text-primary">
             <div className="flex space-x-6 items-center h-10">
-              <a
-                aria-label="Github Repository"
-                href="https://github.com/vercel/commerce"
-                className={s.link}
-              >
-                <Github />
-              </a>
               <I18nWidget />
             </div>
           </div>
         </div>
         <div className="py-12 flex flex-col md:flex-row justify-between items-center space-y-4">
           <div>
-            <span>&copy; 2020 ACME, Inc. All rights reserved.</span>
+            <span>&copy; 2020 GRLDS, Inc. All rights reserved.</span>
           </div>
           <div className="flex items-center text-primary">
-            <span className="text-primary">Crafted by</span>
+            <span className="text-primary">Crafted by: </span>
+            <a
+                aria-label="Github Developer Umbranian0"
+                href="https://github.com/umbranian0"
+                className={s.link}
+              >
+                <Github />
+            </a>
+            
             <a
               rel="noopener"
               href="https://vercel.com"

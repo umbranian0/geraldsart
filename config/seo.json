@@ -1,12 +1,12 @@
 {
   "title": "Grlds Art| Powered by Next.js",
   "titleTemplate": "%s - Gerald's",
-  "description": "Next.js Art Commerce -> https://www.nextjs.org/commerce",
+  "description": "Grlds Art Commerce -> https://www.instagram.com/grlds.art/",
   "openGraph": {
     "type": "website",
     "locale": "en_IE",
-    "url": "https://nextjs.org/commerce",
-    "site_name": "Next.js Commerce"
+    "url": "https://www.instagram.com/grlds.art/",
+    "site_name": "Geral's Commerce"
   },
   "twitter": {
     "handle": "@nextjs",
